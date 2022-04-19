@@ -6,7 +6,6 @@ object caesar {
     else charNum.toChar
   }
 
-  decipher('x', 22)
 
   def caesar(s: String, n: Int): String = {
     s.toList.foldLeft(List.empty[Char]) { (result, c) =>
@@ -14,5 +13,4 @@ object caesar {
     }.mkString
   }
 
-  caesar("jgorevxumxgsskx", 20)
 }
